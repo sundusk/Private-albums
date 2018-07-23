@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14269.12" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14252.5"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="146" id="KGk-i7-Jjw" customClass="CQMQPhotoTableViewCell" customModule="demoSwitf" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="431" height="146"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="431" height="145.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="相册图标" translatesAutoresizingMaskIntoConstraints="NO" id="OWm-SS-ucj">
+                        <rect key="frame" x="20" y="23" width="100" height="100"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="4UA-Vb-0aY"/>
+                            <constraint firstAttribute="height" constant="100" id="u0o-h8-alb"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="相册名称" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NWJ-mS-pP9">
+                        <rect key="frame" x="150" y="64" width="261" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="OWm-SS-ucj" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="7N0-wb-khX"/>
+                    <constraint firstItem="OWm-SS-ucj" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="Jaj-8l-Fym"/>
+                    <constraint firstItem="NWJ-mS-pP9" firstAttribute="leading" secondItem="OWm-SS-ucj" secondAttribute="trailing" constant="30" id="RhZ-aN-TQs"/>
+                    <constraint firstAttribute="trailing" secondItem="NWJ-mS-pP9" secondAttribute="trailing" constant="20" id="apZ-EM-rLv"/>
+                    <constraint firstItem="NWJ-mS-pP9" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="pAQ-Bn-SxZ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imageLabel" destination="NWJ-mS-pP9" id="LMc-tD-MuK"/>
+                <outlet property="photoImage" destination="OWm-SS-ucj" id="oJ1-iY-Iwj"/>
+            </connections>
+            <point key="canvasLocation" x="80.5" y="124"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="相册图标" width="200" height="200"/>
+    </resources>
+</document>
