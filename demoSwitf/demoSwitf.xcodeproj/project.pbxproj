@@ -19,6 +19,7 @@
 		E755C78C2101ED6300FC9E6A /* demoSwitfTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E755C78B2101ED6300FC9E6A /* demoSwitfTests.swift */; };
 		E755C7972101ED6300FC9E6A /* demoSwitfUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E755C7962101ED6300FC9E6A /* demoSwitfUITests.swift */; };
 		E755C7A52101EEEA00FC9E6A /* HeaderFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = E755C7A42101EEEA00FC9E6A /* HeaderFile.swift */; };
+		E75B139E210F1D3300905F1C /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75B139D210F1D3300905F1C /* HomeCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		E755C7962101ED6300FC9E6A /* demoSwitfUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = demoSwitfUITests.swift; sourceTree = "<group>"; };
 		E755C7982101ED6300FC9E6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E755C7A42101EEEA00FC9E6A /* HeaderFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderFile.swift; sourceTree = "<group>"; };
+		E75B139D210F1D3300905F1C /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
 		E9820034077CEEEA3C8878B8 /* Pods-demoSwitf.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-demoSwitf.debug.xcconfig"; path = "Pods/Target Support Files/Pods-demoSwitf/Pods-demoSwitf.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -124,6 +126,7 @@
 				E755C7782101ED6200FC9E6A /* ViewController.swift */,
 				E705E5FF21057E4100A915D6 /* CQMQPhotoViewController.swift */,
 				E705E6042105ACF800A915D6 /* CQMQPhotoTableViewCell.swift */,
+				E75B139D210F1D3300905F1C /* HomeCollectionViewCell.swift */,
 				E705E6052105ACF800A915D6 /* CQMQPhotoTableViewCell.xib */,
 				E755C7A42101EEEA00FC9E6A /* HeaderFile.swift */,
 				E755C77A2101ED6200FC9E6A /* Main.storyboard */,
@@ -339,6 +342,7 @@
 				E755C7A52101EEEA00FC9E6A /* HeaderFile.swift in Sources */,
 				E755C7772101ED6200FC9E6A /* AppDelegate.swift in Sources */,
 				E705E60021057E4100A915D6 /* CQMQPhotoViewController.swift in Sources */,
+				E75B139E210F1D3300905F1C /* HomeCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
