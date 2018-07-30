@@ -59,6 +59,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     }
     
     
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
       
@@ -78,8 +79,22 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         self.navigationController?.pushViewController(vc, animated: true)
     
     }
-    
+    func tableView(_ tableView: UITableView, titleForDeleteConfirmationButtonForRowAt indexPath: IndexPath) -> String?{
+        return "删除"
+    }
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath)
+    {
+        
+        if editingStyle == UITableViewCell.EditingStyle.delete {
+            
+            self.arrcount.remove(at: indexPath.row)
+            //刷新tableview
+            tableView.deleteRows(at: [indexPath], with: UITableView.RowAnimation.automatic)
+        }
+    }
 
+    
+    
     
     
     @objc func clickPhoto(){
